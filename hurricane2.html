@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<body style="background-color:#d7c3d9">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #9a12b3;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Hurricanes</h1>
+  <p>Continued</p>
+</div>
+
+<div class="topnav">
+  <a href="file:///C:/Users/GWC-4TYVG/Documents/GWC%202019/Hurricanes.html">Back to Hurricanes</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>STAY PREPARED</h2>
+    <ol>
+    <li>Plan your evacuation route well ahead of time</li>
+    <li>Keep non-perishable emergency supplies on hand</li>
+    <li>Take an inventory of your personal property</li>
+    <li>Review your insurance policies</li>
+    <li>Take steps to protect your home and business (if you have one)</li>
+    <br>
+    </ol>
+
+  </div>
+
+  <div class="column">
+    <h2>STATISTICS</h2>
+    <h4>Bar Graph</h4>
+    <img src = "https://curryja.files.wordpress.com/2010/09/graph2.jpg" height="350px" width="400px">
+    <h4>Inland Flooding Infographic</h4>
+    <img src = "https://www.weather.gov/images/wrn/Infographics/inland_flooding.png" height="350px" width="400px">
+    <h4>Understanding Storm Surge Infographic</h4>
+    <img src = "https://www.weather.gov/images/wrn/Infographics/understanding_storm_surge_1.jpg" height="350px" width="400px">
+  </div>
+
+  <div class="column">
+    <h2>RESOURCES & EXTRAS</h2>
+    <iframe width="450" height="315" src="https://www.youtube.com/embed/xHRbnuB9F1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <a href = "https://www.arcgis.com/apps/MapSeries/index.html?appid=50aea84a9853491f994f775cb989ea92">Website: The 10 Most Damaging Hurricanes in United States History</a>
+    <a href = "https://www.nhc.noaa.gov/">Interactive Website: Track Hurricanes in the Central, Eastern North Pacific, and the Atlantic</a>
+    <br>
+    <a href = "https://eddy.nps.edu/hurricaneSim/simulation">Hurricane Simulation Challenge Game</a>
+  </div>
+</div>
+
+</body>
+</html>
